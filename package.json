@@ -1,0 +1,21 @@
+{
+    "name": "five-card",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "node api/generate.js",
+        "start": "node api/generate.js",
+        "build": "echo 'No build step required'"
+    },
+    "dependencies": {
+        "axios": "^1.6.7",
+        "express": "^4.18.2",
+        "cors": "^2.8.5"
+    },
+    "devDependencies": {
+        "@vercel/node": "^4.0.0"
+    },
+    "engines": {
+        "node": "18.x"
+    }
+} 

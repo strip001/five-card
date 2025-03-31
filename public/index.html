@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>5分钟知识点速记卡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 5分钟知识点速记卡</h1>
+        <div class="input-group">
+            <input type="password" id="apiKey" placeholder="输入你的 DeepSeek API Key">
+            <input type="text" id="keyword" placeholder="输入知识点，如：勾股定理">
+            <button onclick="generateCard()">生成记忆卡</button>
+        </div>
+        <div id="loading" class="loading">生成中... ⏳</div>
+        <div id="cards"></div>
+        <div class="tips">🔄 点击卡片可以重新生成！</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
